@@ -15,7 +15,7 @@ export class UserJSONService implements UserService {
         let usersJson = JSON.parse(fs.readFileSync(this.filePath, 'utf8'))
         let id = usersJson.reduce((maxId: number, user: { id: number; }) => Math.max(maxId, user.id), 0) + 1;
 
-        const user = new User(id, username)
+        const user: User = new User(id, username)
         usersJson.push(user)
         fs.writeFileSync(this.filePath, JSON.stringify(usersJson))
         return user
