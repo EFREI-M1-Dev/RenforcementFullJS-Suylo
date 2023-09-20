@@ -13,8 +13,8 @@ npm run dev
 Liens utiles de l'API :
 - **getAllUsers** - GET : http://localhost:3000/api/user/
 - **addUser** - POST : http://localhost:3000/api/user/add-user
-- **DeleteUserById** - DELETE : http://localhost:3000/api/user/delete-user/<ID>
-- **getUserById** - GET : http://localhost:3000/api/user/<ID>
+- **DeleteUserById** - DELETE : http://localhost:3000/api/user/delete-user/:ID
+- **getUserById** - GET : http://localhost:3000/api/user/:ID
 
 Corps de la requête POST à envoyer : 
 ```json
