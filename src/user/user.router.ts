@@ -20,6 +20,15 @@ export class UserRouter {
             }
         });
 
+        this.router.get('/', (req, res, next) => {
+            try {
+                const result = this.userController.getAll()
+                res.status(200).json(result)
+            } catch (error: unknown) {
+                next(error)
+            }
+        })
+
         this.router.post('/add-user', (req, res, next) => {
             try {
                 const result = this.userController.add(req.body.username)
@@ -28,5 +37,14 @@ export class UserRouter {
                 next(error)
             }
         });
+
+        this.router.delete('/delete-user/:id', (req, res, next) => {
+            try {
+                const result = this.userController.deleteById(parseInt(req.params.id))
+                res.status(200).json(result)
+            } catch (error: unknown) {
+                next(error)
+            }
+        })
     }
 }

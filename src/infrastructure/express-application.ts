@@ -28,7 +28,7 @@ export class ExpressApplication {
 
     private configureEnvironment(): void {
         dotenv.config({
-            path: '.env',
+            path: '.env.local',
         });
     }
 
