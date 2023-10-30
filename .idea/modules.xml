@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/RenforcementFullJS.iml" filepath="$PROJECT_DIR$/RenforcementFullJS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/RenforcementFullJS.iml" filepath="$PROJECT_DIR$/.idea/RenforcementFullJS.iml" />
     </modules>
   </component>
 </project>
